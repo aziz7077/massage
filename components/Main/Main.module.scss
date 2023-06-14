@@ -1,0 +1,225 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 48px;
+          color: #000000;
+        }
+        .path {
+          display: flex;
+          align-items: center;
+          padding: 0 0 0 50px;
+          height: 51px;
+          width: 200%;
+          background: #7db2f0;
+          clip-path: polygon(
+            100% 1%,
+            100% 50%,
+            100% 100%,
+            0% 100%,
+            4% 48%,
+            0% 0%
+          );
+          h2 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #ffffff;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    .content {
+      gap: 70px;
+      .header {
+        gap: 50px;
+        img {
+          width: 130px;
+          height: 130px;
+        }
+        .title {
+          gap: 10px;
+          h1 {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 845px) {
+  .container {
+    .content {
+      gap: 50px;
+      .header {
+        gap: 40px;
+        img {
+          width: 120px;
+          height: 120px;
+        }
+        .title {
+          gap: 15px;
+          h1 {
+            font-size: 35px;
+          }
+          .path {
+            padding: 0 0 0 50px;
+            height: 51px;
+            width: 160%;
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 665px) {
+  .container {
+    .content {
+      gap: 30px;
+      .header {
+        gap: 30px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        .title {
+          gap: 10px;
+          h1 {
+            font-size: 30px;
+          }
+          .path {
+            padding: 0 0 0 40px;
+            height: 41px;
+            width: 130%;
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 595px) {
+  .container {
+    .content {
+      gap: 30px;
+      .header {
+        gap: 10px;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        .title {
+          gap: 5px;
+          h1 {
+            font-size: 24px;
+          }
+          .path {
+            padding: 0 0 0 30px;
+            height: 35px;
+            width: 130%;
+            h2 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 490px) {
+  .container {
+    .content {
+      .header {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        .title {
+          gap: 0;
+          h1 {
+            font-size: 22px;
+          }
+          .path {
+            padding: 0 0 0 22px;
+            height: 35px;
+            width: 100%;
+            h2 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .container {
+    .content {
+      .header {
+        .title {
+          h1 {
+            font-size: 28px;
+          }
+          .path {
+            padding: 0 0 0 20px;
+            height: 30px;
+            width: 110%;
+            h2 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

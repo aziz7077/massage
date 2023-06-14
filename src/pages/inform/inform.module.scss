@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  .content {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    .profil {
+      width: 445px;
+      height: 291px;
+      box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 445px;
+      height: 430px;
+      box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    .content {
+      gap: 30px;
+      .profil {
+        width: 405px;
+        height: 251px;
+      }
+      .title {
+        width: 415px;
+        height: 380px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    .content {
+      gap: 20px;
+      .profil {
+        width: 335px;
+        height: 231px;
+      }
+      .title {
+        width: 335px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    .content {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 50px;
+      .profil {
+        width: 335px;
+        height: 231px;
+      }
+      .title {
+        width: 335px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    .content {
+      .profil {
+        width: 305px;
+        height: 201px;
+      }
+      .title {
+        width: 305px;
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container {
+    .content {
+      .profil {
+        width: 265px;
+        height: 161px;
+      }
+      .title {
+        width: 265px;
+        height: 230px;
+      }
+    }
+  }
+}
