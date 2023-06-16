@@ -30,7 +30,7 @@ const Card = () => {
                     cards.map((card) => (
                         <div className={s.card}>
                             <h1>{card.title}</h1>
-                            <Link  className={s.btn} href='#'>ПОДРОБНЕЕ</Link>
+                            <Link className={s.btn} href='/inform'>ПОДРОБНЕЕ</Link>
                         </div>
                     ))
                 }
